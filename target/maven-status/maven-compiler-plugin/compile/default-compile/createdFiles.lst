@@ -1,0 +1,5 @@
+com\bloom\dao\MovieDao.class
+com\bloom\models\Movie.class
+com\bloom\BloomConfiguration.class
+com\bloom\BloomApplication.class
+com\bloom\resources\MovieResource.class
