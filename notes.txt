@@ -1,0 +1,56 @@
+How to run the application
+
+1. To compile and build run the batch file build.bat . It will build the jar file 
+2. To run the application run the file run.bat
+
+
+How to run the web services
+
+
+ 1.Create new Movie
+   POST method  
+    http://localhost:8080/movies
+     input 
+       {
+       "name": "7",
+        "duration": 7,
+        "actor": "actor7",
+        "actress": "actress",
+        "director": "director7",
+        "releaseYear": 7
+ }
+ 
+2. Get all movies
+	GET method
+	http://localhost:8080/movies
+
+3.Get movies by id
+	GET method
+	http://localhost:8080/movies/2
+
+4.delete movie by id
+	DELETE method
+	http://localhost:8080/movies/1 
+
+5.Update movie details
+	PUT method
+	http://localhost:8080/movies/2  
+	{
+	"id":2,
+	"name": "2",
+	"duration": 7,
+	"actor": "actor7",
+	"actress": "actress987",
+	"director": "director789",
+	"releaseYear": 7
+	}
+
+5.search by  fields
+	GET method
+	search by duration
+	http://localhost:8080/movies/duration/8
+	GET method
+	search by actor
+	http://localhost:8080/movies/actor/actor1
+
+
